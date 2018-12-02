@@ -14,7 +14,7 @@ private Outfit _outfit;
 	}
 	
 	@Override
-	public java.lang.String giveAdvice() {
+	public java.lang.String giveAdvice() { 
 		return "50 points pour Grifondor ... ! ";
 	}
 	@Override
