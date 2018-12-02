@@ -1,11 +1,15 @@
 package fr.wildcodeschool.thewizardproject.models;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("Dumbledore")
 public class Dumbledore implements WizardInterface {
 	
-	
+
 private Outfit _outfit;
 	
-	public Dumbledore( Outfit outfit ) {
+	public Dumbledore( @Qualifier("Outfit")Outfit outfit ) {
 		_outfit = outfit;
 	}
 	

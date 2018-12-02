@@ -7,14 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	 <bean id="Outfit" class="fr.wildcodeschool.thewizardproject.models.Outfit">
-	</bean>
-	<bean id="Dumbledore"
-		class="fr.wildcodeschool.thewizardproject.models.Dumbledore">
-		<constructor-arg ref="Outfit"/>
-	</bean>
-	<bean id="Gandalf"
-		class="fr.wildcodeschool.thewizardproject.models.Gandalf">
-		<constructor-arg ref="Outfit"/>
-	</bean>
+	<context:component-scan
+		base-package="fr.wildcodeschool.thewizardproject.models">
+	</context:component-scan>
 </beans>
